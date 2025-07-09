@@ -1,0 +1,12 @@
+$body_margins: 0;
+$body_padding: 0;
+$paragraph_margins: 10px;
+
+body {
+    margin: $body_margins;
+    padding: $body_padding;
+
+    p {
+        margin: $paragraph_margins;
+    }
+}
