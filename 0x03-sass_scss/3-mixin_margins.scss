@@ -1,0 +1,12 @@
+@mixin set-side-margins($value) {
+    margin-right: $value;
+    margin-left: $value;
+}
+
+body {
+    @include set-side-margins(10px);
+}
+
+div {
+    @include set-side-margins(15px);
+}
