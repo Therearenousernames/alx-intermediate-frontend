@@ -1,0 +1,24 @@
+# Step 1: Install NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Step 2: Restart your terminal or run the following to load nvm
+source ~/.nvm/nvm.sh
+
+# Step 3: Check if Node.js version 20.16.0 is installed
+nvm ls
+
+# Step 4: If not installed, install and use it
+nvm install 20.16.0
+nvm use 20.16.0
+
+# Step 5: Attempt to install SASS version 3.7.4
+# This will fail – version does not exist
+npm install sass@3.7.4
+# Error: No matching version found for sass@3.7.4
+
+# Step 6: Install the latest valid version instead
+npm install sass
+
+# Step 7: Check if the installation was successful
+npx sass --version
+# Output should be something like: 1.69.5 compiled with dart2js ...
